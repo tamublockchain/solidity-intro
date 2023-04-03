@@ -1,7 +1,9 @@
-// SPDX-License-Identifier: GPL-3.0
-pragma solidity ^0.8.9;
+// SPDX-License-Identifier: GPL-3.0 
+pragma solidity ^0.8.9; //this is used so that solidity knows which version of the compiler to use
 
 contract Bank {
+    //mapping that simulates bank accounts
+    //we tie a user address to their balance 
     mapping (address => uint256) private acct_balances;
     
     /**
