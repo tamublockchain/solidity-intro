@@ -4,9 +4,9 @@ A two-part introduction to solidity and basic front end for the club
 ### After the deploy.js script has been created
 1. `npx hardhat node`
 2. Open up metamask and add a network 
-    a. Usually at http://127.0.0.1:8545/
-    b. ChainID: 31337
-    c. ETH
+    * Usually at http://127.0.0.1:8545/
+    * ChainID: 31337
+    * ETH
 3. Import the first account using the private key of the first account
 4. `npx hardhat run --network localhost scripts/deploy.js`
 5. `npx hardhat console --network localhost`
