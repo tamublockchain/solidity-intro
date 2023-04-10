@@ -12,9 +12,9 @@ A two-part introduction to solidity and basic front end for the club
 5. `npx hardhat console --network localhost`
 
 ### At this point you should be in an interactive JS environment
-1. const BANK = await ethers.getContractFactory("Bank")
-2. const bank = await BANK.attach(<contract>)
-3. const P1ADDR = "<acct0 public key>"
-4. const p1 = await ethers.getSigner(P1ADDR)
-5. Call functions using await bank.<function>
-6. To pass a `msg.value` use bank.<function>({ value: ethers.utils.parseEther("10")})
+1. `const BANK = await ethers.getContractFactory("Bank")`
+2. `const bank = await BANK.attach(<contract>)`
+3. `const P1ADDR = "acct0 public key"`
+4. `const p1 = await ethers.getSigner(P1ADDR)`
+5. `Call functions using await bank.functionName`
+6. To pass a `msg.value` use `bank.functionName({ value: ethers.utils.parseEther("10")})`
